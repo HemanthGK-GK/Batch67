@@ -6,19 +6,13 @@ namespace Day3
     {
         static void Main(string[] args)
         {
-            int fullTime = 1;
-            int empRate = 50;
-            int empWage = 0;
-            int hours = 0;
+            
             Random random = new Random();
             int empCheck = random.Next(0, 2);
-            if (empCheck == fullTime)
-                hours = 8;
+            if (empCheck == 1)
+                Console.WriteLine("Employee is Present");
             else
-                hours = 0;
-
-            empWage = empRate * hours;
-            Console.WriteLine("Employee Wage :" + empWage);
+               Console.WriteLine("Employee is Absent");
 
         }
     }
